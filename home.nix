@@ -119,8 +119,6 @@
     };
     vscode.enable = true;
     feh.enable = true;
-    starship.enable = true;
-    starship.enableZshIntegration = true;
     bat.enable = true;
   };
 
