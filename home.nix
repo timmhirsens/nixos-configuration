@@ -36,6 +36,8 @@
     zip
     cmatrix
     btop
+    via
+    vial
     ## Dev
     neovim
     temurin-bin-21

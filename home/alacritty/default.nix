@@ -2,8 +2,8 @@
   programs.alacritty =
     let
       catpuccin-macchiato = pkgs.fetchurl {
-        url = https://raw.githubusercontent.com/catppuccin/alacritty/main/catppuccin-macchiato.yml;
-        hash = lib.fakeHash;
+        url = https://raw.githubusercontent.com/catppuccin/alacritty/main/catppuccin-macchiato.toml;
+        hash = "sha256-m0Y8OBD9Pgjw9ARwjeD8a+JIQRDboVVCywQS8/ZBAcc=";
       };
     in
     {
