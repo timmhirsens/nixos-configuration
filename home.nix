@@ -2,6 +2,7 @@
 
 {
   imports = [
+    ./home/alacritty
     ./home/git
     ./home/i3
     ./home/intellij
@@ -101,22 +102,6 @@
   };
 
   programs = {
-    alacritty = {
-      enable = true;
-      settings = {
-        font.normal.family = "JetBrains Mono";
-        font.size = 10;
-        env = {
-          WINIT_X11_SCALE_FACTOR = "1.0";
-        };
-        window.padding = {
-          x = 4;
-          y = 4;
-        };
-        window.dynamic_padding = true;
-        window.opacity = 0.95;
-      };
-    };
     vscode.enable = true;
     feh.enable = true;
     bat.enable = true;
@@ -131,6 +116,28 @@
   };
   services.dunst = {
     enable = true;
+    settings = {
+      global = {
+        frame_color = "#c6a0f6";
+        separator_color = "frame";
+        frame_width = 2;
+        transparency = 10;
+        gap_size = 4;
+      };
+      urgency_low = {
+        background = "#24273A";
+        foreground = "#CAD3F5";
+      };
+      urgency_normal = {
+        background = "#24273A";
+        foreground = "#CAD3F5";
+      };
+      urgency_critical = {
+        background = "#24273A";
+        foreground = "#CAD3F5";
+        frame_color = "#F5A97F";
+      };
+    };
   };
   services.udiskie = {
     enable = true;
