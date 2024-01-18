@@ -217,7 +217,8 @@
       assign [class="jetbrains-idea"] 3
       assign [class="zoom"] 9
       assign [class="Spotify"] 7
-      assign [class="Firefox"] 2
+      assign [class="^firefox$"] 2
+      assign [class="^thunderbird$"] 6
     '';
   };
 }
