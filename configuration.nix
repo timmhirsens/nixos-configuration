@@ -14,7 +14,7 @@
   # Use the systemd-boot EFI boot loader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-  boot.plymouth.enable = true;
+  boot.plymouth.enable = false;
   boot.plymouth.theme = "breeze";
 
   networking.hostName = "nixos"; # Define your hostname.
@@ -47,7 +47,6 @@
 
   console = {
     font = "Lat2-Terminus16";
-    #   keyMap = "us";
     useXkbConfig = true; # use xkb.options in tty.
   };
 
@@ -77,8 +76,9 @@
 
 
   # Configure keymap in X11
-  services.xserver.xkb.layout = "de";
-  services.xserver.xkb.options = "eurosign:e,caps:escape";
+  services.xserver.xkb.layout = "eu,us,de";
+  services.xserver.xkb.options = "caps:escape";
+  # services.xserver.xkb.variant = ",intl,";
 
   security.polkit.enable = true;
   systemd = {
@@ -99,6 +99,11 @@
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
+  services.avahi = {
+    enable = true;
+    nssmdns4 = true;
+    openFirewall = true;
+  };
 
   # Enable sound.
   sound.enable = true;
