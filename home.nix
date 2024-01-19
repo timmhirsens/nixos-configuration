@@ -46,6 +46,9 @@
     python311Packages.pip
     qmk
     udiskie
+    nodejs_20
+    nodePackages.pnpm
+    maven
     ## Desktop
     betterlockscreen
     picom
