@@ -106,6 +106,7 @@
         { command = "systemctl --user restart polybar"; always = true; notification = false; }
         { command = "$HOME/.fehbg"; always = true; notification = false; }
         { command = "1password --silent"; always = false; notification = false; }
+        { command = "blueman-applet"; always = false; notification = false; }
         { command = "xsetroot -cursor_name left_ptr"; always = true; notification = false; }
       ];
     };
