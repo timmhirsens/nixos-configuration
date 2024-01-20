@@ -1,4 +1,38 @@
 { pkgs, lib, ... }: {
+  home.packages = with pkgs; [
+    ## Desktop
+    betterlockscreen
+    picom
+    thunderbird
+    flameshot
+    rofi
+    rofi-power-menu
+    slack
+    catppuccin
+    xdg-user-dirs
+  ];
+
+  services.udiskie = {
+    enable = true;
+    tray = "always";
+  };
+
+  services.picom.enable = true;
+
+  services.betterlockscreen = {
+    enable = true;
+    arguments = [ "blur" ];
+  };
+
+  services.flameshot.enable = true;
+
+  systemd.user.targets.tray = {
+    Unit = {
+      Description = "Home Manager System Tray";
+      Requires = [ "graphical-session-pre.target" ];
+    };
+  };
+
   gtk = {
     enable = true;
     iconTheme = {
