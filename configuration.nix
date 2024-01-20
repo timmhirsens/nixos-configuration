@@ -13,6 +13,7 @@
 
   # Use the systemd-boot EFI boot loader.
   boot.loader.systemd-boot.enable = true;
+  boot.loader.systemd-boot.configurationLimit = 12;
   boot.loader.efi.canTouchEfiVariables = true;
   boot.plymouth.enable = false;
   boot.plymouth.theme = "breeze";
@@ -81,6 +82,7 @@
   # services.xserver.xkb.variant = ",intl,";
 
   security.polkit.enable = true;
+  security.pam.services.kwallet.enableKwallet = true;
   systemd = {
     user.services.lxpolkit = {
       description = "lxpolkit";
@@ -169,7 +171,10 @@
       thunar-media-tags-plugin
     ];
   };
-  programs._1password-gui.enable = true;
+  programs._1password-gui = {
+    enable = true;
+    polkitPolicyOwners = [ "timm" ];
+  };
   programs.xss-lock = {
     enable = true;
   };
