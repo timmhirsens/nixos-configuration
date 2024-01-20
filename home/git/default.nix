@@ -9,6 +9,16 @@
     userName = "Timm Hirsens";
     userEmail = "timmhirsens@gmail.com";
 
+    includes = [
+      {
+        condition = "gitdir:~/Work";
+        contents = {
+          user.email = "timm.hirsens@haeger-experts.de";
+          user.name = "Timm Hirsens";
+        };
+      }
+    ];
+
     extraConfig = {
       init.defaultBranch = "main";
       push.autoSetupRemote = "true";
