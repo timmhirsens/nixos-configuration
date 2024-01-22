@@ -15,7 +15,6 @@
         plugin = tmuxPlugins.catppuccin;
         extraConfig = "set -g @catppuccin_flavor 'macchiato'";
       }
-      tmuxPlugins.sensible
     ];
   };
 }

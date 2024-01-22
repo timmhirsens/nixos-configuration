@@ -13,5 +13,6 @@
   programs = {
     feh.enable = true;
     bat.enable = true;
+    ripgrep.enable = true;
   };
 }

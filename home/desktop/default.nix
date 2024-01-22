@@ -1,15 +1,19 @@
 { pkgs, lib, ... }: {
   home.packages = with pkgs; [
-    ## Desktop
+    arandr
     betterlockscreen
-    picom
-    thunderbird
+    catppuccin
+    evince
     flameshot
+    gnome.simple-scan
+    microsoft-edge
+    picom
     rofi
     rofi-power-menu
     slack
-    catppuccin
+    thunderbird
     xdg-user-dirs
+    zoom-us
   ];
 
   services.udiskie = {
