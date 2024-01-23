@@ -3,10 +3,12 @@
     arandr
     betterlockscreen
     catppuccin
+    clipit
     evince
     flameshot
     gnome.simple-scan
     microsoft-edge
+    networkmanager-fortisslvpn
     picom
     rofi
     rofi-power-menu
