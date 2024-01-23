@@ -1,11 +1,12 @@
 { pkgs, lib, ... }: {
   home.packages = with pkgs; [
-    neovim
+    kubectl
+    maven
     temurin-bin-21
-    qmk
+    neovim
     nodejs_20
     nodePackages.pnpm
-    maven
+    qmk
   ];
 
   programs = {
