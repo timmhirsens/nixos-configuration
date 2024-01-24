@@ -14,6 +14,7 @@
     rofi-power-menu
     slack
     thunderbird
+    todoist-electron
     xdg-user-dirs
     zoom-us
   ];
