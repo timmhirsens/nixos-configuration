@@ -119,7 +119,7 @@
   hardware.bluetooth.powerOnBoot = true; # powers up the default Bluetooth controller on boot
 
   hardware.sane.extraBackends = [ pkgs.sane-airscan ];
-  hardware.sane.enable = true
+  hardware.sane.enable = true;
 
   services.blueman.enable = true;
   # Enable touchpad support (enabled default in most desktopManager).
@@ -130,7 +130,7 @@
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.timm = {
     isNormalUser = true;
-    extraGroups = [ "wheel" "docker" "networkmanager" ]; # Enable ‘sudo’ for the user.
+    extraGroups = [ "wheel" "docker" "networkmanager" "scanner" "lp" ]; # Enable ‘sudo’ for the user.
     shell = pkgs.zsh;
     packages = with pkgs; [
       firefox

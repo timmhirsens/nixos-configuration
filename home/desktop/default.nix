@@ -9,6 +9,7 @@
     gnome.simple-scan
     microsoft-edge
     networkmanager-fortisslvpn
+    openssl
     picom
     rofi
     rofi-power-menu
