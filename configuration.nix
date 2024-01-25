@@ -118,6 +118,9 @@
   hardware.bluetooth.enable = true; # enables support for Bluetooth
   hardware.bluetooth.powerOnBoot = true; # powers up the default Bluetooth controller on boot
 
+  hardware.sane.extraBackends = [ pkgs.sane-airscan ];
+  hardware.sane.enable = true
+
   services.blueman.enable = true;
   # Enable touchpad support (enabled default in most desktopManager).
   services.xserver.libinput.enable = true;
