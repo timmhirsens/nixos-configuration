@@ -196,6 +196,11 @@
     (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
   ];
 
+  nixpkgs.config.permittedInsecurePackages = [
+    "electron-25.9.0"
+  ];
+
+
   system.stateVersion = "23.11"; # Did you read the comment?
 
 }

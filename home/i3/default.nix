@@ -87,6 +87,7 @@
           "${modifier}+Shift+Return" = "exec alacritty";
           "${modifier}+Shift+c" = "kill";
           "${modifier}+d" = "exec ${pkgs.dmenu}/bin/dmenu_run";
+          "${modifier}+period" = "exec rofimoji";
           "${modifier}+Shift+e" = "exec \"rofi -show power-menu -modi power-menu:rofi-power-menu\"";
           "${modifier}+Shift+s" = "exec --no-startup-id \"flameshot gui -c -s\"";
         };
@@ -221,6 +222,8 @@
       assign [class="Spotify"] 7
       assign [class="^firefox$"] 2
       assign [class="^thunderbird$"] 6
+      assign [class="^obsidian$"] 8
+      assign [class="^Todoist$"] 8
     '';
   };
 }

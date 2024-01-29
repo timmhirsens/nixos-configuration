@@ -9,9 +9,11 @@
     gnome.simple-scan
     microsoft-edge
     networkmanager-fortisslvpn
+    obsidian
     openssl
     picom
     rofi
+    rofimoji
     rofi-power-menu
     slack
     thunderbird
