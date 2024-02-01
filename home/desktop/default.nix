@@ -7,10 +7,13 @@
     evince
     flameshot
     gnome.simple-scan
+    libreoffice
     microsoft-edge
     networkmanager-fortisslvpn
     obsidian
+    openfortivpn
     openssl
+    openvpn
     picom
     rofi
     rofimoji
@@ -100,4 +103,5 @@
       createDirectories = true;
     };
   };
+
 }

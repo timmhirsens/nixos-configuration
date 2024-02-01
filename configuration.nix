@@ -196,6 +196,13 @@
     (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
   ];
 
+  programs.nix-ld.enable = true;
+
+  programs.nix-ld.libraries = with pkgs; [
+
+    libsecret
+  ];
+
   nixpkgs.config.permittedInsecurePackages = [
     "electron-25.9.0"
   ];
