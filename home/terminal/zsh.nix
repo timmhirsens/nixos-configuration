@@ -23,6 +23,7 @@
         ".." = "cd ..";
         g = "git";
         k = "kubectl";
+        tf = "terraform";
       };
     };
     starship = {

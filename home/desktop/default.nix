@@ -19,7 +19,6 @@
     rofimoji
     rofi-power-menu
     slack
-    terraform
     thunderbird
     todoist-electron
     xdg-user-dirs

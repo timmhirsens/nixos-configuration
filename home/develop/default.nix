@@ -1,5 +1,6 @@
 { pkgs, lib, ... }: {
   home.packages = with pkgs; [
+    k9s
     kubectl
     maven
     neovim
