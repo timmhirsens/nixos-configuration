@@ -6,9 +6,10 @@
     neovim
     nodejs_20
     nodePackages.pnpm
-    terraform
     qmk
     temurin-bin-21
+    terraform
+    terragrunt
   ];
 
   programs = {
