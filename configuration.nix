@@ -207,6 +207,21 @@
     "electron-25.9.0"
   ];
 
+  services.xserver.displayManager.lightdm = {
+    enable = true;
+    greeters.gtk = {
+      enable = true;
+      theme = {
+        name = "Catppuccin-Macchiato-Compact-Pink-Dark";
+        package = pkgs.catppuccin-gtk.override {
+          accents = [ "pink" ];
+          size = "compact";
+          tweaks = [ "rimless" ];
+          variant = "macchiato";
+        };
+      };
+    };
+  };
 
   system.stateVersion = "23.11"; # Did you read the comment?
 
