@@ -2,6 +2,7 @@
   home.packages = with pkgs; [
     azure-cli
     kubectl
+    kubeseal
     maven
     neovim
     nodejs_20
