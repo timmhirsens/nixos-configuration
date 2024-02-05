@@ -14,6 +14,7 @@
     openfortivpn
     openssl
     openvpn
+    pavucontrol
     picom
     rofi
     rofimoji
