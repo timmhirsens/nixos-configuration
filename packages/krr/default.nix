@@ -2,7 +2,8 @@
 let
   prometheus-api-client = callPackage ./prometheus-api-client.nix { };
   alive-progress = callPackage ./alive-progress.nix { };
-  prometrix = callPackage ./prometrix { };
+  prometrix = callPackage ./prometrix.nix { };
+  pydantic1 = callPackage ./pydantic1.nix { };
 in
 
 python3.pkgs.buildPythonPackage {
@@ -55,7 +56,7 @@ python3.pkgs.buildPythonPackage {
     poetry-core
     pyasn1-modules
     pyasn1
-    pydantic
+    pydantic1
     pygments
     pyparsing
     python-dateutil
