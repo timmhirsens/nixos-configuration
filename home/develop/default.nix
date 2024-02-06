@@ -1,7 +1,11 @@
 { pkgs, lib, ... }: {
   home.packages = with pkgs; [
     azure-cli
+    gcc
+    (callPackage ../../packages/krr/default.nix { inherit pkgs; })
     kubectl
+    kubelogin
+    kubernetes-helm
     kubeseal
     maven
     neovim

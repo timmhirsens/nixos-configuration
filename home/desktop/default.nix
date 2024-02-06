@@ -3,6 +3,7 @@
     arandr
     betterlockscreen
     catppuccin
+    chromium
     clipit
     evince
     flameshot
@@ -10,6 +11,7 @@
     libreoffice
     microsoft-edge
     networkmanager-fortisslvpn
+    networkmanager-openvpn
     obsidian
     openfortivpn
     openssl
